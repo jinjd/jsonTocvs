@@ -1,0 +1,11 @@
+1.、使用postman调用fortify接口获取issues(这一步按理说也能通过java实现，但是我没试成功)，postman文件为src/main/resources/exportFortifyIssues.postman.json
+	1）POST，登录
+		http://100.2.92.150:8080/ssc/j_spring_security_check?hash=&j_username=lixianzhuang&j_password=123456Aa%3F
+	2）GET，获取json格式issues，选“Send”下拉按钮里的“Send and Download”保存到文件。
+		http://100.2.92.150:8080/ssc/api/v1/projectVersions/24/issues?limit=5000&start=0
+		“24”：扫描项目编号，可以F12从Fortify界面得到。
+		limit：单次导出的issue数量，不宜过大，过大的话会导致postman卡死，5000就可以。
+		start：偏移量。
+2、使用工具类GetFortifyIssues.java将json格式的issues转换成csv格式，如有需要可以手动将csv另存为xlsx。
+
+

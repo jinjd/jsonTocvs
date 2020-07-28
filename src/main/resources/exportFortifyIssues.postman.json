@@ -1,0 +1,125 @@
+{
+	"id": "7f49f7e8-4f2e-30e8-cb0b-b6ae27aa2fab",
+	"name": "Fortify",
+	"description": "",
+	"order": [
+		"3320f509-c01f-b76b-1d44-fd669cf61149",
+		"2e7fd05a-e3ce-f18a-9fc0-3079d8dd5dc6"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1563939023262,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2e7fd05a-e3ce-f18a-9fc0-3079d8dd5dc6",
+			"headers": "//Cookie: isIcm=true; showVerifycode=; userType=local; threepower=false; modifyPassword=false; remaingDays=; comment=; onlySN=; regionId=regionOne; availablePlatform=CONTAINER%2CHYPERVISOR%2COPENSTACK; roleType=vdcuser; vdcId=1364; connect.sid=s%3AJLtRbWHFRrtE66SvfKkdE-H6EwB3ruzk.sUv8q8fKZTWexZIGHMl9u2%2FKlri%2BGtmbajg7LsEO5PI; platform=openstack\n",
+			"headerData": [
+				{
+					"key": "Cookie",
+					"value": "isIcm=true; showVerifycode=; userType=local; threepower=false; modifyPassword=false; remaingDays=; comment=; onlySN=; regionId=regionOne; availablePlatform=CONTAINER%2CHYPERVISOR%2COPENSTACK; roleType=vdcuser; vdcId=1364; connect.sid=s%3AJLtRbWHFRrtE66SvfKkdE-H6EwB3ruzk.sUv8q8fKZTWexZIGHMl9u2%2FKlri%2BGtmbajg7LsEO5PI; platform=openstack",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://100.2.92.150:8080/ssc/api/v1/projectVersions/24/issues?filter=FOLDER:b968f72f-cc12-03b5-976e-ad4c13920c21,FOLDER:5b50bb77-071d-08ed-fdba-1213fa90ac5a,FOLDER:d5f55910-5f0d-a775-e91f-191d1f5608a4&filterset=a243b195-0a59-3f8b-1403-d55b7a7d78e6&limit=5000&orderby=%2Bfriority&start=0",
+			"queryParams": [
+				{
+					"key": "filter",
+					"value": "FOLDER:b968f72f-cc12-03b5-976e-ad4c13920c21,FOLDER:5b50bb77-071d-08ed-fdba-1213fa90ac5a,FOLDER:d5f55910-5f0d-a775-e91f-191d1f5608a4",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "filterset",
+					"value": "a243b195-0a59-3f8b-1403-d55b7a7d78e6",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "5000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "orderby",
+					"value": "%2Bfriority",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "start",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1577407387956,
+			"name": "Fortify-getList",
+			"description": "",
+			"collectionId": "7f49f7e8-4f2e-30e8-cb0b-b6ae27aa2fab",
+			"responses": []
+		},
+		{
+			"id": "3320f509-c01f-b76b-1d44-fd669cf61149",
+			"headers": "",
+			"headerData": [],
+			"url": "http://100.2.92.150:8080/ssc/j_spring_security_check?hash=&j_username=lixianzhuang&j_password=123456Aa%3F",
+			"queryParams": [
+				{
+					"key": "hash",
+					"value": "",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "j_username",
+					"value": "lixianzhuang",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "j_password",
+					"value": "123456Aa%3F",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7f49f7e8-4f2e-30e8-cb0b-b6ae27aa2fab",
+			"data": null,
+			"dataMode": "params",
+			"name": "Fortify-login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1563939028050,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

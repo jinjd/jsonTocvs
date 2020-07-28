@@ -1,0 +1,5 @@
+[gerrit]
+host=100.2.126.191
+port=29418
+project=fortify-util.git
+defaultbranch=master
